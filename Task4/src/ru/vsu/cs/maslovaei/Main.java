@@ -6,12 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double n = readNum("Input n: ");
+        double n = readNumber("Input n: ");
         
-        writeNum(n);
+        writeNumber(n);
     }
     
-    private static double readNum(String text) {
+    private static double readNumber(String text) {
         System.out.print(text);
         Scanner scanner = new Scanner(System.in);
         return scanner.nextDouble();
@@ -26,7 +26,7 @@ public class Main {
         return summa;
     }
 
-    private static void writeNum(double n) {
+    private static void writeNumber(double n) {
         System.out.println("Result: " + countSumma(n));
     }
     
