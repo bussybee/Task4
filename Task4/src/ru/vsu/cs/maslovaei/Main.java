@@ -7,7 +7,14 @@ public class Main {
     public static void main(String[] args) {
 
         double n = readNum("Input n: ");
+        
         writeNum(n);
+    }
+    
+    private static double readNum(String text) {
+        System.out.print(text);
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
     }
 
     private static double countSumma(double n) {
@@ -22,10 +29,5 @@ public class Main {
     private static void writeNum(double n) {
         System.out.println("Result: " + countSumma(n));
     }
-
-    private static double readNum(String text) {
-        System.out.print(text);
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextDouble();
-    }
+    
 }
